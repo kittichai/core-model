@@ -1,16 +1,19 @@
 package dto
 
 type UserRequest struct {
-	ID    string `json:"id"`
-	Email string `json:"email"`
-	Name  string `json:"name"`
+	FirstName    string `json:"first_name"`
+	LastName     string `json:"last_name"`
+	Email        string `json:"email"`
+	UserName     string `json:"username"`
+	PasswordHash string `json:"password_hash"`
 }
 
 type UserResponse struct {
-	ID      string          `json:"id"`
-	Email   string          `json:"email"`
-	Name    string          `json:"name"`
-	Message MessageResponse `json:"message"`
+	ID        string          `json:"id"`
+	FirstName string          `json:"first_name"`
+	LastName  string          `json:"last_name"`
+	Email     string          `json:"email"`
+	Message   MessageResponse `json:"message"`
 }
 
 type MessageResponse struct {
